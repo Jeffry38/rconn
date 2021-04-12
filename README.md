@@ -1,4 +1,4 @@
-rconn (r[everse] conn[ection]) is a multiplatform program for creating reverse connections. It lets you consume services that are behind NAT and/or firewall without adding firewall rules or port-forwarding. This is achieved by creating a connection from the node behind the firewall/NAT to a port on your local machine, and then a port is exposed in your machine through which you can connect to the service that is behind firewall/NAT. All traffic is routed through the initial port that was opened by the machine behind firewall/NAT.
+rconn (r[everse] conn[ection]) is a multiplatform program for creating reverse connections. It lets you consume services that are behind NAT and/or firewall without adding firewall rules or port-forwarding. This is achieved by creating a connection from the node behind the firewall/NAT to a port on your local machine, and then a port is exposed in your machine through which you can connect to the service that is behind firewall/NAT. All traffic is routed through the initial connection that was opened by the machine behind firewall/NAT.
 
 ### Building
 Build with: `go build`.
