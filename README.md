@@ -3,6 +3,9 @@ rconn (r[everse] conn[ection]) is a multiplatform program for creating reverse c
 ### Building
 Build with: `go build`.
 
+### For OpenWRT
+CGO_ENABLED=0 GOOS=linux GOARCH=mips GOMIPS=softfloat go build -ldflags "-s -w -extldflags -static -extldflags -static" ./main.go
+
 ### Explanation
 ![diagram](https://github.com/jafarlihi/rconn/blob/master/diagram.png?raw=true)
 
